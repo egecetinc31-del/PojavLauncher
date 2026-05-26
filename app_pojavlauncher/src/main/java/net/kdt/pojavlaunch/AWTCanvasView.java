@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
 import android.content.*;
 import android.graphics.*;
@@ -7,7 +7,7 @@ import android.util.*;
 import android.view.*;
 
 import java.util.*;
-import net.kdt.pojavlaunch.utils.*;
+import net.kdt.aesirlaunch.utils.*;
 
 public class AWTCanvasView extends TextureView implements TextureView.SurfaceTextureListener, Runnable {
     public static final int AWT_CANVAS_WIDTH = 720;

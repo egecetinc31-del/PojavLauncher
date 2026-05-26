@@ -1,13 +1,13 @@
-package net.kdt.pojavlaunch.customcontrols.gamepad;
+package net.kdt.aesirlaunch.customcontrols.gamepad;
 
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_DEADZONE_SCALE;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_DEADZONE_SCALE;
 
 import android.util.Log;
 import android.view.InputDevice;
 import android.view.MotionEvent;
 
 
-import net.kdt.pojavlaunch.utils.MathUtils;
+import net.kdt.aesirlaunch.utils.MathUtils;
 
 public class GamepadJoystick {
 

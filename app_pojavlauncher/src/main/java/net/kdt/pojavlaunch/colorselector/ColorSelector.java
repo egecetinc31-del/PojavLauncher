@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.colorselector;
+package net.kdt.aesirlaunch.colorselector;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 
 import com.kdt.SideDialogView;
 
-import net.kdt.pojavlaunch.R;
+import net.kdt.aesirlaunch.R;
 
 public class ColorSelector extends SideDialogView implements HueSelectionListener, RectangleSelectionListener, AlphaSelectionListener, TextWatcher{
     private static final int ALPHA_MASK = ~(0xFF << 24);

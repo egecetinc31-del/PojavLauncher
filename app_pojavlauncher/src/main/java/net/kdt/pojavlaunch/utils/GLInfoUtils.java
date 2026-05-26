@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.utils;
+package net.kdt.aesirlaunch.utils;
 
 import android.opengl.EGL14;
 import android.opengl.EGLConfig;

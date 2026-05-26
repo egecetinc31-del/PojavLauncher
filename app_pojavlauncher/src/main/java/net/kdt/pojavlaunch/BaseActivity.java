@@ -1,11 +1,11 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
 import android.content.*;
 import android.os.*;
 import androidx.appcompat.app.*;
-import net.kdt.pojavlaunch.utils.*;
+import net.kdt.aesirlaunch.utils.*;
 
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_IGNORE_NOTCH;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_IGNORE_NOTCH;
 
 public abstract class BaseActivity extends AppCompatActivity {
 

@@ -1,11 +1,11 @@
-package net.kdt.pojavlaunch.imgcropper;
+package net.kdt.aesirlaunch.imgcropper;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.Rect;
 
-import net.kdt.pojavlaunch.utils.MatrixUtils;
+import net.kdt.aesirlaunch.utils.MatrixUtils;
 
 public class BitmapCropBehaviour implements CropperBehaviour{
     private final Matrix mTranslateInverse = new Matrix();

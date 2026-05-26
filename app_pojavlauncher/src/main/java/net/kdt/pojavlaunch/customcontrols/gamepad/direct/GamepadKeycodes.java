@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.customcontrols.gamepad.direct;
+package net.kdt.aesirlaunch.customcontrols.gamepad.direct;
 
 public class GamepadKeycodes {
     public static final byte GLFW_RELEASE = 0;

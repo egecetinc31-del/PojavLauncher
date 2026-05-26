@@ -1,15 +1,15 @@
-package net.kdt.pojavlaunch.modloaders.modpacks.api;
+package net.kdt.aesirlaunch.modloaders.modpacks.api;
 
 import com.kdt.mcgui.ProgressLayout;
 
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.modloaders.modpacks.imagecache.ModIconCache;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.ModDetail;
-import net.kdt.pojavlaunch.progresskeeper.DownloaderProgressWrapper;
-import net.kdt.pojavlaunch.utils.DownloadUtils;
-import net.kdt.pojavlaunch.value.launcherprofiles.LauncherProfiles;
-import net.kdt.pojavlaunch.value.launcherprofiles.MinecraftProfile;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.modloaders.modpacks.imagecache.ModIconCache;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.ModDetail;
+import net.kdt.aesirlaunch.progresskeeper.DownloaderProgressWrapper;
+import net.kdt.aesirlaunch.utils.DownloadUtils;
+import net.kdt.aesirlaunch.value.launcherprofiles.LauncherProfiles;
+import net.kdt.aesirlaunch.value.launcherprofiles.MinecraftProfile;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,11 +1,11 @@
-package net.kdt.pojavlaunch.value.launcherprofiles;
+package net.kdt.aesirlaunch.value.launcherprofiles;
 
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
 
 import java.io.File;
 import java.io.IOException;

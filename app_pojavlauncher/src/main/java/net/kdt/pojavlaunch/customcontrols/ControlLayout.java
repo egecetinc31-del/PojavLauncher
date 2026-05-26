@@ -1,7 +1,7 @@
-package net.kdt.pojavlaunch.customcontrols;
+package net.kdt.aesirlaunch.customcontrols;
 
 import static android.content.Context.INPUT_METHOD_SERVICE;
-import static net.kdt.pojavlaunch.Tools.currentDisplayMetrics;
+import static net.kdt.aesirlaunch.Tools.currentDisplayMetrics;
 
 import static org.lwjgl.glfw.CallbackBridge.isGrabbing;
 
@@ -23,18 +23,18 @@ import com.google.gson.JsonSyntaxException;
 import com.kdt.pickafile.FileListView;
 import com.kdt.pickafile.FileSelectedListener;
 
-import net.kdt.pojavlaunch.MinecraftGLSurface;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.customcontrols.buttons.ControlButton;
-import net.kdt.pojavlaunch.customcontrols.buttons.ControlDrawer;
-import net.kdt.pojavlaunch.customcontrols.buttons.ControlInterface;
-import net.kdt.pojavlaunch.customcontrols.buttons.ControlJoystick;
-import net.kdt.pojavlaunch.customcontrols.buttons.ControlSubButton;
-import net.kdt.pojavlaunch.customcontrols.handleview.ActionRow;
-import net.kdt.pojavlaunch.customcontrols.handleview.ControlHandleView;
-import net.kdt.pojavlaunch.customcontrols.handleview.EditControlSideDialog;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.MinecraftGLSurface;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.customcontrols.buttons.ControlButton;
+import net.kdt.aesirlaunch.customcontrols.buttons.ControlDrawer;
+import net.kdt.aesirlaunch.customcontrols.buttons.ControlInterface;
+import net.kdt.aesirlaunch.customcontrols.buttons.ControlJoystick;
+import net.kdt.aesirlaunch.customcontrols.buttons.ControlSubButton;
+import net.kdt.aesirlaunch.customcontrols.handleview.ActionRow;
+import net.kdt.aesirlaunch.customcontrols.handleview.ControlHandleView;
+import net.kdt.aesirlaunch.customcontrols.handleview.EditControlSideDialog;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,10 +1,10 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
 import static android.os.Build.VERSION.SDK_INT;
 import static android.os.Build.VERSION_CODES.P;
-import static net.kdt.pojavlaunch.PojavApplication.sExecutorService;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_IGNORE_NOTCH;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_NOTCH_SIZE;
+import static net.kdt.aesirlaunch.AesirApplication.sExecutorService;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_IGNORE_NOTCH;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_NOTCH_SIZE;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -49,28 +49,28 @@ import androidx.fragment.app.FragmentActivity;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import net.kdt.pojavlaunch.lifecycle.ContextExecutor;
-import net.kdt.pojavlaunch.lifecycle.ContextExecutorTask;
-import net.kdt.pojavlaunch.lifecycle.LifecycleAwareAlertDialog;
-import net.kdt.pojavlaunch.memory.MemoryHoleFinder;
-import net.kdt.pojavlaunch.memory.SelfMapsParser;
-import net.kdt.pojavlaunch.multirt.MultiRTUtils;
-import net.kdt.pojavlaunch.multirt.Runtime;
-import net.kdt.pojavlaunch.plugins.FFmpegPlugin;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.utils.DateUtils;
-import net.kdt.pojavlaunch.utils.DownloadUtils;
-import net.kdt.pojavlaunch.utils.FileUtils;
-import net.kdt.pojavlaunch.utils.GLInfoUtils;
-import net.kdt.pojavlaunch.utils.JREUtils;
-import net.kdt.pojavlaunch.utils.JSONUtils;
-import net.kdt.pojavlaunch.utils.MCOptionUtils;
-import net.kdt.pojavlaunch.utils.OldVersionsUtils;
-import net.kdt.pojavlaunch.value.DependentLibrary;
-import net.kdt.pojavlaunch.value.MinecraftAccount;
-import net.kdt.pojavlaunch.value.MinecraftLibraryArtifact;
-import net.kdt.pojavlaunch.value.launcherprofiles.LauncherProfiles;
-import net.kdt.pojavlaunch.value.launcherprofiles.MinecraftProfile;
+import net.kdt.aesirlaunch.lifecycle.ContextExecutor;
+import net.kdt.aesirlaunch.lifecycle.ContextExecutorTask;
+import net.kdt.aesirlaunch.lifecycle.LifecycleAwareAlertDialog;
+import net.kdt.aesirlaunch.memory.MemoryHoleFinder;
+import net.kdt.aesirlaunch.memory.SelfMapsParser;
+import net.kdt.aesirlaunch.multirt.MultiRTUtils;
+import net.kdt.aesirlaunch.multirt.Runtime;
+import net.kdt.aesirlaunch.plugins.FFmpegPlugin;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.utils.DateUtils;
+import net.kdt.aesirlaunch.utils.DownloadUtils;
+import net.kdt.aesirlaunch.utils.FileUtils;
+import net.kdt.aesirlaunch.utils.GLInfoUtils;
+import net.kdt.aesirlaunch.utils.JREUtils;
+import net.kdt.aesirlaunch.utils.JSONUtils;
+import net.kdt.aesirlaunch.utils.MCOptionUtils;
+import net.kdt.aesirlaunch.utils.OldVersionsUtils;
+import net.kdt.aesirlaunch.value.DependentLibrary;
+import net.kdt.aesirlaunch.value.MinecraftAccount;
+import net.kdt.aesirlaunch.value.MinecraftLibraryArtifact;
+import net.kdt.aesirlaunch.value.launcherprofiles.LauncherProfiles;
+import net.kdt.aesirlaunch.value.launcherprofiles.MinecraftProfile;
 
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.io.IOUtils;
@@ -101,22 +101,22 @@ import java.util.Map;
 public final class Tools {
     public  static final float BYTE_TO_MB = 1024 * 1024;
     public static final Handler MAIN_HANDLER = new Handler(Looper.getMainLooper());
-    public static String APP_NAME = "PojavLauncher";
+    public static String APP_NAME = "AesirLauncher";
 
     public static final Gson GLOBAL_GSON = new GsonBuilder().setPrettyPrinting().create();
 
-    public static final String URL_HOME = "https://pojavlauncherteam.github.io";
+    public static final String URL_HOME = "https://aesirlauncherteam.github.io";
     public static String NATIVE_LIB_DIR;
     public static String DIR_DATA; //Initialized later to get context
     public static File DIR_CACHE;
     public static String MULTIRT_HOME;
     public static String LOCAL_RENDERER = null;
     public static int DEVICE_ARCHITECTURE;
-    public static final String LAUNCHERPROFILES_RTPREFIX = "pojav://";
+    public static final String LAUNCHERPROFILES_RTPREFIX = "aesir://";
 
     // New since 3.3.1
     public static String DIR_ACCOUNT_NEW;
-    public static String DIR_GAME_HOME = Environment.getExternalStorageDirectory().getAbsolutePath() + "/games/PojavLauncher";
+    public static String DIR_GAME_HOME = Environment.getExternalStorageDirectory().getAbsolutePath() + "/games/AesirLauncher";
     public static String DIR_GAME_NEW;
     public static String GAME_PROFILES_FILE;
 
@@ -136,27 +136,27 @@ public final class Tools {
     private static RenderersList sCompatibleRenderers;
 
 
-    private static File getPojavStorageRoot(Context ctx) {
+    private static File getAesirStorageRoot(Context ctx) {
         if(SDK_INT >= 29) {
             return ctx.getExternalFilesDir(null);
         }else{
-            return new File(Environment.getExternalStorageDirectory(),"games/PojavLauncher");
+            return new File(Environment.getExternalStorageDirectory(),"games/AesirLauncher");
         }
     }
 
     /**
-     * Checks if the Pojav's storage root is accessible and read-writable
+     * Checks if the Aesir's storage root is accessible and read-writable
      * @param context context to get the storage root if it's not set yet
      * @return true if storage is fine, false if storage is not accessible
      */
     public static boolean checkStorageRoot(Context context) {
-        File externalFilesDir = DIR_GAME_HOME  == null ? Tools.getPojavStorageRoot(context) : new File(DIR_GAME_HOME);
+        File externalFilesDir = DIR_GAME_HOME  == null ? Tools.getAesirStorageRoot(context) : new File(DIR_GAME_HOME);
         //externalFilesDir == null when the storage is not mounted if it was obtained with the context call
         return externalFilesDir != null && Environment.getExternalStorageState(externalFilesDir).equals(Environment.MEDIA_MOUNTED);
     }
 
     /**
-     * Checks if the Pojav's storage root is accessible and read-writable. If it's not, starts
+     * Checks if the Aesir's storage root is accessible and read-writable. If it's not, starts
      * the MissingStorageActivity and finishes the supplied activity.
      * @param context the Activity that checks for storage availability
      * @return whether the storage is available or not.
@@ -192,7 +192,7 @@ public final class Tools {
      */
     public static void initStorageConstants(Context ctx){
         initEarlyConstants(ctx);
-        DIR_GAME_HOME = getPojavStorageRoot(ctx).getAbsolutePath();
+        DIR_GAME_HOME = getAesirStorageRoot(ctx).getAbsolutePath();
         DIR_GAME_NEW = DIR_GAME_HOME + "/.minecraft";
         DIR_HOME_VERSION = DIR_GAME_NEW + "/versions";
         DIR_HOME_LIBRARY = DIR_GAME_NEW + "/libraries";
@@ -848,7 +848,7 @@ public final class Tools {
                 libItem.downloads.artifact.sha1 = "9e98cf55be371cafdb9c70c35d04ec2a8c2b42ac";
                 libItem.downloads.artifact.url = "https://repo1.maven.org/maven2/com/github/oshi/oshi-core/6.3.0/oshi-core-6.3.0.jar";
             } else if (libItem.name.startsWith("org.ow2.asm:asm-all:")) {
-                // Early versions of the ASM library get repalced with 5.0.4 because Pojav's LWJGL is compiled for
+                // Early versions of the ASM library get repalced with 5.0.4 because Aesir's LWJGL is compiled for
                 // Java 8, which is not supported by old ASM versions. Mod loaders like Forge, which depend on this
                 // library, often include lwjgl in their class transformations, which causes errors with old ASM versions.
                 if(Integer.parseInt(version[0]) >= 5) continue;
@@ -1430,12 +1430,12 @@ public final class Tools {
     }
 
     public static boolean isDemoProfile(Context ctx){
-        MinecraftAccount currentProfile = PojavProfile.getCurrentProfileContent(ctx, null);
+        MinecraftAccount currentProfile = AesirProfile.getCurrentProfileContent(ctx, null);
         return currentProfile != null && currentProfile.isDemo();
     }
 
     public static boolean isLocalProfile(Context ctx){
-        MinecraftAccount currentProfile = PojavProfile.getCurrentProfileContent(ctx, null);
+        MinecraftAccount currentProfile = AesirProfile.getCurrentProfileContent(ctx, null);
         return currentProfile == null || currentProfile.isLocal();
     }
 }

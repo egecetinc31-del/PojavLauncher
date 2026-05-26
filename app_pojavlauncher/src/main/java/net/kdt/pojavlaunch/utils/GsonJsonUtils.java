@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.utils;
+package net.kdt.aesirlaunch.utils;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;

@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.modloaders.modpacks.imagecache;
+package net.kdt.aesirlaunch.modloaders.modpacks.imagecache;
 
 import android.graphics.Bitmap;
 

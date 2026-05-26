@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.customcontrols.mouse;
+package net.kdt.aesirlaunch.customcontrols.mouse;
 
 import org.lwjgl.glfw.CallbackBridge;
 

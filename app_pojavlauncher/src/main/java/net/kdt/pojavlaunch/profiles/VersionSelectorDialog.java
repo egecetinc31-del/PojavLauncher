@@ -1,6 +1,6 @@
-package net.kdt.pojavlaunch.profiles;
+package net.kdt.aesirlaunch.profiles;
 
-import static net.kdt.pojavlaunch.extra.ExtraCore.getValue;
+import static net.kdt.aesirlaunch.extra.ExtraCore.getValue;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,9 +8,9 @@ import android.widget.ExpandableListView;
 
 import androidx.appcompat.app.AlertDialog;
 
-import net.kdt.pojavlaunch.JMinecraftVersionList;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.extra.ExtraConstants;
+import net.kdt.aesirlaunch.JMinecraftVersionList;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.extra.ExtraConstants;
 
 public class VersionSelectorDialog {
     public static void open(Context context, boolean hideCustomVersions, VersionSelectorListener listener) {

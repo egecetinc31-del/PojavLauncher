@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.customcontrols.mouse;
+package net.kdt.aesirlaunch.customcontrols.mouse;
 
 import android.content.Context;
 import android.os.Handler;
@@ -11,11 +11,11 @@ import android.view.ViewParent;
 
 import androidx.annotation.Nullable;
 
-import net.kdt.pojavlaunch.GrabListener;
-import net.kdt.pojavlaunch.LwjglGlfwKeycode;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.utils.MCOptionUtils;
-import net.kdt.pojavlaunch.utils.MathUtils;
+import net.kdt.aesirlaunch.GrabListener;
+import net.kdt.aesirlaunch.LwjglGlfwKeycode;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.utils.MCOptionUtils;
+import net.kdt.aesirlaunch.utils.MathUtils;
 
 import org.lwjgl.glfw.CallbackBridge;
 

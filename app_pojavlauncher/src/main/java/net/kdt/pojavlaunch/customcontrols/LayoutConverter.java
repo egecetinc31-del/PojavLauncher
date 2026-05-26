@@ -1,9 +1,9 @@
-package net.kdt.pojavlaunch.customcontrols;
+package net.kdt.aesirlaunch.customcontrols;
 
 import com.google.gson.JsonSyntaxException;
 
-import net.kdt.pojavlaunch.LwjglGlfwKeycode;
-import net.kdt.pojavlaunch.Tools;
+import net.kdt.aesirlaunch.LwjglGlfwKeycode;
+import net.kdt.aesirlaunch.Tools;
 
 import org.json.JSONArray;
 import org.json.JSONException;

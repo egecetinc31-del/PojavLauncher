@@ -1,13 +1,13 @@
-package net.kdt.pojavlaunch.prefs;
+package net.kdt.aesirlaunch.prefs;
 
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_DISABLE_GESTURES;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_ENABLE_GYRO;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_GYRO_INVERT_X;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_GYRO_INVERT_Y;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_GYRO_SENSITIVITY;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_LONGPRESS_TRIGGER;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_MOUSESPEED;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_SCALE_FACTOR;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_DISABLE_GESTURES;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_ENABLE_GYRO;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_GYRO_INVERT_X;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_GYRO_INVERT_Y;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_GYRO_SENSITIVITY;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_LONGPRESS_TRIGGER;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_MOUSESPEED;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_SCALE_FACTOR;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -19,9 +19,9 @@ import android.widget.TextView;
 
 import com.kdt.CustomSeekbar;
 
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.utils.interfaces.SimpleSeekBarListener;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.utils.interfaces.SimpleSeekBarListener;
 
 /**
  * Side dialog for quick settings that you can change in game

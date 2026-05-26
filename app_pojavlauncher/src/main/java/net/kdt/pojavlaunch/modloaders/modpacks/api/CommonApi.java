@@ -1,15 +1,15 @@
-package net.kdt.pojavlaunch.modloaders.modpacks.api;
+package net.kdt.aesirlaunch.modloaders.modpacks.api;
 
 import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import net.kdt.pojavlaunch.PojavApplication;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.Constants;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.ModDetail;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.ModItem;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.SearchFilters;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.SearchResult;
+import net.kdt.aesirlaunch.AesirApplication;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.Constants;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.ModDetail;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.ModItem;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.SearchFilters;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.SearchResult;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ public class CommonApi implements ModpackApi {
             // and the previous result is null, it means that na error has occured on the previous
             // page. We lost contingency anyway, so don't bother requesting.
             if(previousPageResult != null && results[i] == null) continue;
-            futures[i] = PojavApplication.sExecutorService.submit(new ApiDownloadTask(i, searchFilters,
+            futures[i] = AesirApplication.sExecutorService.submit(new ApiDownloadTask(i, searchFilters,
                     results[i]));
         }
 

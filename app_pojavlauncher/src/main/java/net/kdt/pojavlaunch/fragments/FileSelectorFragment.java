@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.fragments;
+package net.kdt.aesirlaunch.fragments;
 
 import android.app.AlertDialog;
 import android.os.Build;
@@ -16,10 +16,10 @@ import androidx.fragment.app.Fragment;
 import com.kdt.pickafile.FileListView;
 import com.kdt.pickafile.FileSelectedListener;
 
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.extra.ExtraConstants;
-import net.kdt.pojavlaunch.extra.ExtraCore;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.extra.ExtraConstants;
+import net.kdt.aesirlaunch.extra.ExtraCore;
 
 import java.io.File;
 public class FileSelectorFragment extends Fragment {

@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.imgcropper;
+package net.kdt.aesirlaunch.imgcropper;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,9 +10,9 @@ import android.graphics.RectF;
 import android.os.Handler;
 import android.os.Looper;
 
-import net.kdt.pojavlaunch.PojavApplication;
-import net.kdt.pojavlaunch.modloaders.modpacks.SelfReferencingFuture;
-import net.kdt.pojavlaunch.utils.MatrixUtils;
+import net.kdt.aesirlaunch.AesirApplication;
+import net.kdt.aesirlaunch.modloaders.modpacks.SelfReferencingFuture;
+import net.kdt.aesirlaunch.utils.MatrixUtils;
 
 import java.util.concurrent.Future;
 
@@ -36,7 +36,7 @@ public class RegionDecoderCropBehaviour extends BitmapCropBehaviour {
                 mOverlayDst.set(overlayDst);
                 mHostView.invalidate();
             });
-        }).startOnExecutor(PojavApplication.sExecutorService);
+        }).startOnExecutor(AesirApplication.sExecutorService);
     };
 
     /**

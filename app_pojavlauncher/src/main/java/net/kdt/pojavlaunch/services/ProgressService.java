@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.services;
+package net.kdt.aesirlaunch.services;
 
 import android.annotation.SuppressLint;
 import android.app.Notification;
@@ -17,11 +17,11 @@ import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.progresskeeper.ProgressKeeper;
-import net.kdt.pojavlaunch.progresskeeper.TaskCountListener;
-import net.kdt.pojavlaunch.utils.NotificationUtils;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.progresskeeper.ProgressKeeper;
+import net.kdt.aesirlaunch.progresskeeper.TaskCountListener;
+import net.kdt.aesirlaunch.utils.NotificationUtils;
 
 /**
  * Lazy service which allows the process not to get killed.

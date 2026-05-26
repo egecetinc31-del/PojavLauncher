@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.value;
+package net.kdt.aesirlaunch.value;
 
 import androidx.annotation.Keep;
 

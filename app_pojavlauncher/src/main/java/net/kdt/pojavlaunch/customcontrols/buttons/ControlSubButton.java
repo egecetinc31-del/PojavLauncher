@@ -1,13 +1,13 @@
-package net.kdt.pojavlaunch.customcontrols.buttons;
+package net.kdt.aesirlaunch.customcontrols.buttons;
 
 import android.annotation.SuppressLint;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
 
-import net.kdt.pojavlaunch.customcontrols.ControlData;
-import net.kdt.pojavlaunch.customcontrols.ControlDrawerData;
-import net.kdt.pojavlaunch.customcontrols.ControlLayout;
-import net.kdt.pojavlaunch.customcontrols.handleview.EditControlSideDialog;
+import net.kdt.aesirlaunch.customcontrols.ControlData;
+import net.kdt.aesirlaunch.customcontrols.ControlDrawerData;
+import net.kdt.aesirlaunch.customcontrols.ControlLayout;
+import net.kdt.aesirlaunch.customcontrols.handleview.EditControlSideDialog;
 
 @SuppressLint("ViewConstructor")
 public class ControlSubButton extends ControlButton {

@@ -521,7 +521,7 @@ public class GLFW
 
     static {
         try {
-            System.loadLibrary("pojavexec");
+            System.loadLibrary("aesirexec");
         } catch (UnsatisfiedLinkError e) {
             e.printStackTrace();
         }
@@ -595,7 +595,7 @@ public class GLFW
         throw new UnsupportedOperationException();
     }
 
-    private static final SharedLibrary GLFW = Library.loadNative(GLFW.class, "org.lwjgl.glfw", "libpojavexec.so", true);
+    private static final SharedLibrary GLFW = Library.loadNative(GLFW.class, "org.lwjgl.glfw", "libaesirexec.so", true);
 
     /** Contains the function pointers loaded from the glfw {@link SharedLibrary}. */
     public static final class Functions {
@@ -604,25 +604,25 @@ public class GLFW
 
         /** Function address. */
         public static final long
-        Init = apiGetFunctionAddress(GLFW, "pojavInit"),
-        CreateContext = apiGetFunctionAddress(GLFW, "pojavCreateContext"),
-        GetCurrentContext = apiGetFunctionAddress(GLFW, "pojavGetCurrentContext"),
-        //DetachOnCurrentThread = apiGetFunctionAddress(GLFW, "pojavDetachOnCurrentThread"),
-        MakeContextCurrent = apiGetFunctionAddress(GLFW, "pojavMakeCurrent"),
-        Terminate = apiGetFunctionAddress(GLFW, "pojavTerminate"),
-        SetWindowHint = apiGetFunctionAddress(GLFW, "pojavSetWindowHint"),
-        SwapBuffers = apiGetFunctionAddress(GLFW, "pojavSwapBuffers"),
-        SwapInterval = apiGetFunctionAddress(GLFW, "pojavSwapInterval"),
-        PumpEvents = apiGetFunctionAddress(GLFW, "pojavPumpEvents"),
-        StopPumping = apiGetFunctionAddress(GLFW, "pojavStopPumping"),
-        StartPumping = apiGetFunctionAddress(GLFW, "pojavStartPumping");
+        Init = apiGetFunctionAddress(GLFW, "aesirInit"),
+        CreateContext = apiGetFunctionAddress(GLFW, "aesirCreateContext"),
+        GetCurrentContext = apiGetFunctionAddress(GLFW, "aesirGetCurrentContext"),
+        //DetachOnCurrentThread = apiGetFunctionAddress(GLFW, "aesirDetachOnCurrentThread"),
+        MakeContextCurrent = apiGetFunctionAddress(GLFW, "aesirMakeCurrent"),
+        Terminate = apiGetFunctionAddress(GLFW, "aesirTerminate"),
+        SetWindowHint = apiGetFunctionAddress(GLFW, "aesirSetWindowHint"),
+        SwapBuffers = apiGetFunctionAddress(GLFW, "aesirSwapBuffers"),
+        SwapInterval = apiGetFunctionAddress(GLFW, "aesirSwapInterval"),
+        PumpEvents = apiGetFunctionAddress(GLFW, "aesirPumpEvents"),
+        StopPumping = apiGetFunctionAddress(GLFW, "aesirStopPumping"),
+        StartPumping = apiGetFunctionAddress(GLFW, "aesirStartPumping");
     }
 
     public static SharedLibrary getLibrary() {
         return GLFW;
     }
 
-    @SuppressWarnings("unused") // Used by pojavexec
+    @SuppressWarnings("unused") // Used by aesirexec
     public static void internalChangeMonitorSize(int width, int height) {
         mGLFWWindowWidth = width;
         mGLFWWindowHeight = height;
@@ -1105,7 +1105,7 @@ public class GLFW
         callV(Functions.StopPumping);
         mGLFWInputPumping = false;
     }
-    @SuppressWarnings("unused") // Used by pojavexec
+    @SuppressWarnings("unused") // Used by aesirexec
     public static void internalWindowSizeChanged(long window) {
         try {
             glfwSetWindowSize(window, mGLFWWindowWidth, mGLFWWindowHeight);
@@ -1223,7 +1223,7 @@ public class GLFW
     }
     public static String glfwGetJoystickName(int jid) {
         if(jid == GLFW_JOYSTICK_1) {
-            return "Pojav XBOX 360 compatible gamepad";
+            return "Aesir XBOX 360 compatible gamepad";
         }else return null;
     }
     public static FloatBuffer glfwGetJoystickAxes(int jid) {
@@ -1263,7 +1263,7 @@ public class GLFW
         return false;
     }
     public static String glfwGetGamepadName(int jid) {
-        if(jid == GLFW_JOYSTICK_1) return "Pojav XBOX 360 compatible gamepad";
+        if(jid == GLFW_JOYSTICK_1) return "Aesir XBOX 360 compatible gamepad";
         else return null;
     }
     public static boolean glfwGetGamepadState(int jid, GLFWGamepadState state) {

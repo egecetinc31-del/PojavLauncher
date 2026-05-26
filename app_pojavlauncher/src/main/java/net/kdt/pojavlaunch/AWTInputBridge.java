@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
 public class AWTInputBridge {
     public static final int EVENT_TYPE_CHAR = 1000;
@@ -35,7 +35,7 @@ public class AWTInputBridge {
     }
     
     static {
-        System.loadLibrary("pojavexec_awt");
+        System.loadLibrary("aesirexec_awt");
     }
     
     public static native void nativeSendData(int type, int i1, int i2, int i3, int i4);

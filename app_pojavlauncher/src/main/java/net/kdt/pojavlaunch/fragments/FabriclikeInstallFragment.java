@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.fragments;
+package net.kdt.aesirlaunch.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -18,17 +18,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import net.kdt.pojavlaunch.PojavApplication;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.extra.ExtraCore;
-import net.kdt.pojavlaunch.modloaders.FabriclikeDownloadTask;
-import net.kdt.pojavlaunch.modloaders.FabriclikeUtils;
-import net.kdt.pojavlaunch.modloaders.FabricVersion;
-import net.kdt.pojavlaunch.modloaders.ModloaderDownloadListener;
-import net.kdt.pojavlaunch.modloaders.ModloaderListenerProxy;
-import net.kdt.pojavlaunch.modloaders.modpacks.SelfReferencingFuture;
-import net.kdt.pojavlaunch.progresskeeper.ProgressKeeper;
+import net.kdt.aesirlaunch.AesirApplication;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.extra.ExtraCore;
+import net.kdt.aesirlaunch.modloaders.FabriclikeDownloadTask;
+import net.kdt.aesirlaunch.modloaders.FabriclikeUtils;
+import net.kdt.aesirlaunch.modloaders.FabricVersion;
+import net.kdt.aesirlaunch.modloaders.ModloaderDownloadListener;
+import net.kdt.aesirlaunch.modloaders.ModloaderListenerProxy;
+import net.kdt.aesirlaunch.modloaders.modpacks.SelfReferencingFuture;
+import net.kdt.aesirlaunch.progresskeeper.ProgressKeeper;
 
 import java.io.File;
 import java.io.IOException;
@@ -238,7 +238,7 @@ public abstract class FabriclikeInstallFragment extends Fragment implements Modl
 
     private void updateLoaderVersions() {
         startLoading();
-        mLoaderVersionFuture = new SelfReferencingFuture(new LoadLoaderVersionsTask()).startOnExecutor(PojavApplication.sExecutorService);
+        mLoaderVersionFuture = new SelfReferencingFuture(new LoadLoaderVersionsTask()).startOnExecutor(AesirApplication.sExecutorService);
     }
 
     private void updateLoaderSpinner() {
@@ -285,7 +285,7 @@ public abstract class FabriclikeInstallFragment extends Fragment implements Modl
 
     private void updateGameVersions() {
         startLoading();
-        mGameVersionFuture = new SelfReferencingFuture(new LoadGameVersionsTask()).startOnExecutor(PojavApplication.sExecutorService);
+        mGameVersionFuture = new SelfReferencingFuture(new LoadGameVersionsTask()).startOnExecutor(AesirApplication.sExecutorService);
     }
 
     private void updateGameSpinner() {

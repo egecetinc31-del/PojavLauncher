@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.profiles;
+package net.kdt.aesirlaunch.profiles;
 
 import android.graphics.drawable.Drawable;
 

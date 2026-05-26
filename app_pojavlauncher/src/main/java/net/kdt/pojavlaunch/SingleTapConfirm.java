@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
 import android.view.*;
 import android.view.GestureDetector.*;

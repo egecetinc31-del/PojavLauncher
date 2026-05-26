@@ -1,7 +1,7 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
-import static net.kdt.pojavlaunch.MainActivity.touchCharInput;
-import static net.kdt.pojavlaunch.utils.MCOptionUtils.getMcScale;
+import static net.kdt.aesirlaunch.MainActivity.touchCharInput;
+import static net.kdt.aesirlaunch.utils.MCOptionUtils.getMcScale;
 import static org.lwjgl.glfw.CallbackBridge.sendMouseButton;
 import static org.lwjgl.glfw.CallbackBridge.windowHeight;
 import static org.lwjgl.glfw.CallbackBridge.windowWidth;
@@ -26,19 +26,19 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 
-import net.kdt.pojavlaunch.customcontrols.ControlLayout;
-import net.kdt.pojavlaunch.customcontrols.gamepad.DefaultDataProvider;
-import net.kdt.pojavlaunch.customcontrols.gamepad.Gamepad;
-import net.kdt.pojavlaunch.customcontrols.gamepad.direct.DirectGamepad;
-import net.kdt.pojavlaunch.customcontrols.gamepad.direct.DirectGamepadEnableHandler;
-import net.kdt.pojavlaunch.customcontrols.mouse.AbstractTouchpad;
-import net.kdt.pojavlaunch.customcontrols.mouse.AndroidPointerCapture;
-import net.kdt.pojavlaunch.customcontrols.mouse.InGUIEventProcessor;
-import net.kdt.pojavlaunch.customcontrols.mouse.InGameEventProcessor;
-import net.kdt.pojavlaunch.customcontrols.mouse.TouchEventProcessor;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.utils.JREUtils;
-import net.kdt.pojavlaunch.utils.MCOptionUtils;
+import net.kdt.aesirlaunch.customcontrols.ControlLayout;
+import net.kdt.aesirlaunch.customcontrols.gamepad.DefaultDataProvider;
+import net.kdt.aesirlaunch.customcontrols.gamepad.Gamepad;
+import net.kdt.aesirlaunch.customcontrols.gamepad.direct.DirectGamepad;
+import net.kdt.aesirlaunch.customcontrols.gamepad.direct.DirectGamepadEnableHandler;
+import net.kdt.aesirlaunch.customcontrols.mouse.AbstractTouchpad;
+import net.kdt.aesirlaunch.customcontrols.mouse.AndroidPointerCapture;
+import net.kdt.aesirlaunch.customcontrols.mouse.InGUIEventProcessor;
+import net.kdt.aesirlaunch.customcontrols.mouse.InGameEventProcessor;
+import net.kdt.aesirlaunch.customcontrols.mouse.TouchEventProcessor;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.utils.JREUtils;
+import net.kdt.aesirlaunch.utils.MCOptionUtils;
 
 import org.lwjgl.glfw.CallbackBridge;
 

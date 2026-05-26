@@ -1,6 +1,6 @@
-package net.kdt.pojavlaunch.customcontrols.handleview;
+package net.kdt.aesirlaunch.customcontrols.handleview;
 
-import static net.kdt.pojavlaunch.Tools.currentDisplayMetrics;
+import static net.kdt.aesirlaunch.Tools.currentDisplayMetrics;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -12,8 +12,8 @@ import android.widget.LinearLayout;
 import androidx.annotation.Nullable;
 import androidx.core.math.MathUtils;
 
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.customcontrols.buttons.ControlInterface;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.customcontrols.buttons.ControlInterface;
 
 /**
  * Layout floating around a Control Button, displaying contextual actions

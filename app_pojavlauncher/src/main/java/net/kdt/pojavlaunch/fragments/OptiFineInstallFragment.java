@@ -1,16 +1,16 @@
-package net.kdt.pojavlaunch.fragments;
+package net.kdt.aesirlaunch.fragments;
 
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.widget.ExpandableListAdapter;
 
-import net.kdt.pojavlaunch.JavaGUILauncherActivity;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.modloaders.ModloaderListenerProxy;
-import net.kdt.pojavlaunch.modloaders.OptiFineDownloadTask;
-import net.kdt.pojavlaunch.modloaders.OptiFineUtils;
-import net.kdt.pojavlaunch.modloaders.OptiFineVersionListAdapter;
+import net.kdt.aesirlaunch.JavaGUILauncherActivity;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.modloaders.ModloaderListenerProxy;
+import net.kdt.aesirlaunch.modloaders.OptiFineDownloadTask;
+import net.kdt.aesirlaunch.modloaders.OptiFineUtils;
+import net.kdt.aesirlaunch.modloaders.OptiFineVersionListAdapter;
 
 import java.io.File;
 import java.io.IOException;

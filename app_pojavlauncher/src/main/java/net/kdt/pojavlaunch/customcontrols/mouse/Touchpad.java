@@ -1,6 +1,6 @@
-package net.kdt.pojavlaunch.customcontrols.mouse;
+package net.kdt.aesirlaunch.customcontrols.mouse;
 
-import static net.kdt.pojavlaunch.Tools.currentDisplayMetrics;
+import static net.kdt.aesirlaunch.Tools.currentDisplayMetrics;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -13,9 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.res.ResourcesCompat;
 
-import net.kdt.pojavlaunch.GrabListener;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.GrabListener;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
 
 import org.lwjgl.glfw.CallbackBridge;
 

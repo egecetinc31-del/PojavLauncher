@@ -1,6 +1,6 @@
-package net.kdt.pojavlaunch.customcontrols.gamepad;
+package net.kdt.aesirlaunch.customcontrols.gamepad;
 
-import net.kdt.pojavlaunch.LwjglGlfwKeycode;
+import net.kdt.aesirlaunch.LwjglGlfwKeycode;
 
 public class GamepadMap {
 

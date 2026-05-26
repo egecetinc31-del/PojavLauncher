@@ -1,7 +1,7 @@
-package net.kdt.pojavlaunch.fragments;
+package net.kdt.aesirlaunch.fragments;
 
-import static net.kdt.pojavlaunch.Tools.openPath;
-import static net.kdt.pojavlaunch.Tools.shareLog;
+import static net.kdt.aesirlaunch.Tools.openPath;
+import static net.kdt.aesirlaunch.Tools.shareLog;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,15 +16,15 @@ import androidx.fragment.app.Fragment;
 
 import com.kdt.mcgui.mcVersionSpinner;
 
-import net.kdt.pojavlaunch.CustomControlsActivity;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.extra.ExtraConstants;
-import net.kdt.pojavlaunch.extra.ExtraCore;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.progresskeeper.ProgressKeeper;
-import net.kdt.pojavlaunch.value.launcherprofiles.LauncherProfiles;
-import net.kdt.pojavlaunch.value.launcherprofiles.MinecraftProfile;
+import net.kdt.aesirlaunch.CustomControlsActivity;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.extra.ExtraConstants;
+import net.kdt.aesirlaunch.extra.ExtraCore;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.progresskeeper.ProgressKeeper;
+import net.kdt.aesirlaunch.value.launcherprofiles.LauncherProfiles;
+import net.kdt.aesirlaunch.value.launcherprofiles.MinecraftProfile;
 
 import java.io.File;
 

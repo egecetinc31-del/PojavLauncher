@@ -1,7 +1,7 @@
 package org.lwjgl.glfw;
 
-import net.kdt.pojavlaunch.*;
-import net.kdt.pojavlaunch.customcontrols.gamepad.direct.DirectGamepadEnableHandler;
+import net.kdt.aesirlaunch.*;
+import net.kdt.aesirlaunch.customcontrols.gamepad.direct.DirectGamepadEnableHandler;
 
 import android.content.*;
 import android.util.Log;
@@ -241,7 +241,7 @@ public class CallbackBridge {
     private static native ByteBuffer nativeCreateGamepadButtonBuffer();
     private static native ByteBuffer nativeCreateGamepadAxisBuffer();
     static {
-        System.loadLibrary("pojavexec");
+        System.loadLibrary("aesirexec");
         sGamepadButtonBuffer = nativeCreateGamepadButtonBuffer();
         sGamepadAxisBuffer = createGamepadAxisBuffer();
     }

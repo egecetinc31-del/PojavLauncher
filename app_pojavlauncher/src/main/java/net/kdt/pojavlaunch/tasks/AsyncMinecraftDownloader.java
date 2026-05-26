@@ -1,9 +1,9 @@
-package net.kdt.pojavlaunch.tasks;
+package net.kdt.aesirlaunch.tasks;
 
-import net.kdt.pojavlaunch.JMinecraftVersionList;
-import net.kdt.pojavlaunch.extra.ExtraConstants;
-import net.kdt.pojavlaunch.extra.ExtraCore;
-import net.kdt.pojavlaunch.value.launcherprofiles.MinecraftProfile;
+import net.kdt.aesirlaunch.JMinecraftVersionList;
+import net.kdt.aesirlaunch.extra.ExtraConstants;
+import net.kdt.aesirlaunch.extra.ExtraCore;
+import net.kdt.aesirlaunch.value.launcherprofiles.MinecraftProfile;
 
 public class AsyncMinecraftDownloader {
     public static String normalizeVersionId(String versionString) {

@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.progresskeeper;
+package net.kdt.aesirlaunch.progresskeeper;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
@@ -18,14 +18,14 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-import net.kdt.pojavlaunch.lifecycle.ContextExecutor;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.tasks.AsyncAssetManager;
-import net.kdt.pojavlaunch.utils.*;
-import net.kdt.pojavlaunch.utils.FileUtils;
+import net.kdt.aesirlaunch.lifecycle.ContextExecutor;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.tasks.AsyncAssetManager;
+import net.kdt.aesirlaunch.utils.*;
+import net.kdt.aesirlaunch.utils.FileUtils;
 
-public class PojavApplication extends Application {
-	public static final String CRASH_REPORT_TAG = "PojavCrashReport";
+public class AesirApplication extends Application {
+	public static final String CRASH_REPORT_TAG = "AesirCrashReport";
 	public static final ExecutorService sExecutorService = new ThreadPoolExecutor(4, 4, 500, TimeUnit.MILLISECONDS,  new LinkedBlockingQueue<>());
 	
 	@Override
@@ -33,13 +33,13 @@ public class PojavApplication extends Application {
 		ContextExecutor.setApplication(this);
 		Thread.setDefaultUncaughtExceptionHandler((thread, th) -> {
 			boolean storagePermAllowed = (Build.VERSION.SDK_INT < 23 || Build.VERSION.SDK_INT >= 29 ||
-					ActivityCompat.checkSelfPermission(PojavApplication.this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) && Tools.checkStorageRoot(PojavApplication.this);
+					ActivityCompat.checkSelfPermission(AesirApplication.this, android.Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) && Tools.checkStorageRoot(AesirApplication.this);
 			File crashFile = new File(storagePermAllowed ? Tools.DIR_GAME_HOME : Tools.DIR_DATA, "latestcrash.txt");
 			try {
 				// Write to file, since some devices may not able to show error
 				FileUtils.ensureParentDirectory(crashFile);
 				PrintStream crashStream = new PrintStream(crashFile);
-				crashStream.append("PojavLauncher crash report\n");
+				crashStream.append("AesirLauncher crash report\n");
 				crashStream.append(" - Time: ").append(DateFormat.getDateTimeInstance().format(new Date())).append("\n");
 				crashStream.append(" - Device: ").append(Build.PRODUCT).append(" ").append(Build.MODEL).append("\n");
 				crashStream.append(" - Android version: ").append(Build.VERSION.RELEASE).append("\n");
@@ -52,7 +52,7 @@ public class PojavApplication extends Application {
 				Log.e(CRASH_REPORT_TAG, " - The crash stack trace was:", th);
 			}
 
-			FatalErrorActivity.showError(PojavApplication.this, crashFile.getAbsolutePath(), storagePermAllowed, th);
+			FatalErrorActivity.showError(AesirApplication.this, crashFile.getAbsolutePath(), storagePermAllowed, th);
 			Tools.fullyExit();
 		});
 		

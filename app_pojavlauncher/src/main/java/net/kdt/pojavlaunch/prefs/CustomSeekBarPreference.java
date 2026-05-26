@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.prefs;
+package net.kdt.aesirlaunch.prefs;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.preference.PreferenceViewHolder;
 import androidx.preference.SeekBarPreference;
 
-import net.kdt.pojavlaunch.R;
+import net.kdt.aesirlaunch.R;
 
 public class CustomSeekBarPreference extends SeekBarPreference {
 

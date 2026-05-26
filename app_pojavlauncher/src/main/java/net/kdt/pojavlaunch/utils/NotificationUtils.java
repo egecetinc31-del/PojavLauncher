@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.utils;
+package net.kdt.aesirlaunch.utils;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -8,7 +8,7 @@ import android.os.Build;
 
 import androidx.core.app.NotificationCompat;
 
-import net.kdt.pojavlaunch.R;
+import net.kdt.aesirlaunch.R;
 
 public class NotificationUtils {
 

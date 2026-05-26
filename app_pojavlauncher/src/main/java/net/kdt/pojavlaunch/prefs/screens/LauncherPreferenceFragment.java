@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.prefs.screens;
+package net.kdt.aesirlaunch.prefs.screens;
 
 
 import android.app.Activity;
@@ -11,9 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
-import net.kdt.pojavlaunch.LauncherActivity;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.LauncherActivity;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
 
 /**
  * Preference for the main screen, any sub-screen should inherit this class for consistent behavior,

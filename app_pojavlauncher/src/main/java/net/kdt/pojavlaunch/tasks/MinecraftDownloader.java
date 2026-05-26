@@ -1,6 +1,6 @@
-package net.kdt.pojavlaunch.tasks;
+package net.kdt.aesirlaunch.tasks;
 
-import static net.kdt.pojavlaunch.PojavApplication.sExecutorService;
+import static net.kdt.aesirlaunch.AesirApplication.sExecutorService;
 
 import android.app.Activity;
 import android.util.Log;
@@ -10,20 +10,20 @@ import androidx.annotation.Nullable;
 
 import com.kdt.mcgui.ProgressLayout;
 
-import net.kdt.pojavlaunch.JAssetInfo;
-import net.kdt.pojavlaunch.JAssets;
-import net.kdt.pojavlaunch.JMinecraftVersionList;
-import net.kdt.pojavlaunch.NewJREUtil;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.mirrors.DownloadMirror;
-import net.kdt.pojavlaunch.mirrors.MirrorTamperedException;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.utils.DownloadUtils;
-import net.kdt.pojavlaunch.utils.FileUtils;
-import net.kdt.pojavlaunch.value.DependentLibrary;
-import net.kdt.pojavlaunch.value.MinecraftClientInfo;
-import net.kdt.pojavlaunch.value.MinecraftLibraryArtifact;
+import net.kdt.aesirlaunch.JAssetInfo;
+import net.kdt.aesirlaunch.JAssets;
+import net.kdt.aesirlaunch.JMinecraftVersionList;
+import net.kdt.aesirlaunch.NewJREUtil;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.mirrors.DownloadMirror;
+import net.kdt.aesirlaunch.mirrors.MirrorTamperedException;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.utils.DownloadUtils;
+import net.kdt.aesirlaunch.utils.FileUtils;
+import net.kdt.aesirlaunch.value.DependentLibrary;
+import net.kdt.aesirlaunch.value.MinecraftClientInfo;
+import net.kdt.aesirlaunch.value.MinecraftLibraryArtifact;
 
 import java.io.File;
 import java.io.IOException;

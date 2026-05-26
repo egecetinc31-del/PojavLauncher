@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.customcontrols.gamepad;
+package net.kdt.aesirlaunch.customcontrols.gamepad;
 
 
 import static android.view.MotionEvent.AXIS_HAT_X;
@@ -23,27 +23,27 @@ import android.widget.ImageView;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.core.math.MathUtils;
 
-import net.kdt.pojavlaunch.GrabListener;
-import net.kdt.pojavlaunch.LwjglGlfwKeycode;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.utils.MCOptionUtils;
+import net.kdt.aesirlaunch.GrabListener;
+import net.kdt.aesirlaunch.LwjglGlfwKeycode;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.utils.MCOptionUtils;
 
 import org.lwjgl.glfw.CallbackBridge;
 
-import static net.kdt.pojavlaunch.Tools.currentDisplayMetrics;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_EAST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NONE;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH_EAST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH_WEST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH_EAST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH_WEST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_WEST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.isJoystickEvent;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_DEADZONE_SCALE;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_SCALE_FACTOR;
-import static net.kdt.pojavlaunch.utils.MCOptionUtils.getMcScale;
+import static net.kdt.aesirlaunch.Tools.currentDisplayMetrics;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_EAST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NONE;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH_EAST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH_WEST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH_EAST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH_WEST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_WEST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.isJoystickEvent;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_DEADZONE_SCALE;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_SCALE_FACTOR;
+import static net.kdt.aesirlaunch.utils.MCOptionUtils.getMcScale;
 import static org.lwjgl.glfw.CallbackBridge.sendKeyPress;
 import static org.lwjgl.glfw.CallbackBridge.sendMouseButton;
 

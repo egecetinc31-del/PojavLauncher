@@ -1,9 +1,9 @@
-package net.kdt.pojavlaunch.modloaders.modpacks.imagecache;
+package net.kdt.aesirlaunch.modloaders.modpacks.imagecache;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-import net.kdt.pojavlaunch.utils.DownloadUtils;
+import net.kdt.aesirlaunch.utils.DownloadUtils;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.utils;
+package net.kdt.aesirlaunch.utils;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -18,13 +18,13 @@ import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
-import net.kdt.pojavlaunch.PojavApplication;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.imgcropper.BitmapCropBehaviour;
-import net.kdt.pojavlaunch.imgcropper.CropperBehaviour;
-import net.kdt.pojavlaunch.imgcropper.CropperView;
-import net.kdt.pojavlaunch.imgcropper.RegionDecoderCropBehaviour;
+import net.kdt.aesirlaunch.AesirApplication;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.imgcropper.BitmapCropBehaviour;
+import net.kdt.aesirlaunch.imgcropper.CropperBehaviour;
+import net.kdt.aesirlaunch.imgcropper.CropperView;
+import net.kdt.aesirlaunch.imgcropper.RegionDecoderCropBehaviour;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -62,7 +62,7 @@ public class CropperUtils {
             // (which has a typical screen density of 395 dpi)
             cropperListener.onCropped(cropImageView.crop((int) Tools.dpToPx(70)));
         });
-        PojavApplication.sExecutorService.execute(()->{
+        AesirApplication.sExecutorService.execute(()->{
             CropperBehaviour cropperBehaviour = null;
             try {
                  cropperBehaviour = createBehaviour(cropImageView, contentResolver, selectedUri);

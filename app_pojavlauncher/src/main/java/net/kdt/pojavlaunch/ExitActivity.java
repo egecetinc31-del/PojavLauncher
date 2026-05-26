@@ -1,6 +1,6 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
-import static net.kdt.pojavlaunch.Tools.shareLog;
+import static net.kdt.aesirlaunch.Tools.shareLog;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

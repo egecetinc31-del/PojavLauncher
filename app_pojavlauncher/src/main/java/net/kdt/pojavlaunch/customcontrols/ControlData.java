@@ -1,15 +1,15 @@
-package net.kdt.pojavlaunch.customcontrols;
+package net.kdt.aesirlaunch.customcontrols;
 
-import static net.kdt.pojavlaunch.LwjglGlfwKeycode.GLFW_KEY_UNKNOWN;
+import static net.kdt.aesirlaunch.LwjglGlfwKeycode.GLFW_KEY_UNKNOWN;
 
 import android.util.ArrayMap;
 
 import androidx.annotation.Keep;
 
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.customcontrols.buttons.ControlInterface;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.utils.JSONUtils;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.customcontrols.buttons.ControlInterface;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.utils.JSONUtils;
 import net.objecthunter.exp4j.ExpressionBuilder;
 import net.objecthunter.exp4j.function.Function;
 

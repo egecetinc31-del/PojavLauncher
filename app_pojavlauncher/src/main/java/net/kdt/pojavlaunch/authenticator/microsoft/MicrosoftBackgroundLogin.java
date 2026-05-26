@@ -1,6 +1,6 @@
-package net.kdt.pojavlaunch.authenticator.microsoft;
+package net.kdt.aesirlaunch.authenticator.microsoft;
 
-import static net.kdt.pojavlaunch.PojavApplication.sExecutorService;
+import static net.kdt.aesirlaunch.AesirApplication.sExecutorService;
 
 import android.util.ArrayMap;
 import android.util.Log;
@@ -10,12 +10,12 @@ import androidx.annotation.Nullable;
 
 import com.kdt.mcgui.ProgressLayout;
 
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.authenticator.listener.DoneListener;
-import net.kdt.pojavlaunch.authenticator.listener.ErrorListener;
-import net.kdt.pojavlaunch.authenticator.listener.ProgressListener;
-import net.kdt.pojavlaunch.value.MinecraftAccount;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.authenticator.listener.DoneListener;
+import net.kdt.aesirlaunch.authenticator.listener.ErrorListener;
+import net.kdt.aesirlaunch.authenticator.listener.ProgressListener;
+import net.kdt.aesirlaunch.value.MinecraftAccount;
 
 import org.json.JSONArray;
 import org.json.JSONException;

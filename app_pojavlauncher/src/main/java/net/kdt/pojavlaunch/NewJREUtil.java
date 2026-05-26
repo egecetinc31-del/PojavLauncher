@@ -1,16 +1,16 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
-import static net.kdt.pojavlaunch.Architecture.archAsString;
+import static net.kdt.aesirlaunch.Architecture.archAsString;
 
 import android.app.Activity;
 import android.content.res.AssetManager;
 import android.util.Log;
 
-import net.kdt.pojavlaunch.multirt.MultiRTUtils;
-import net.kdt.pojavlaunch.multirt.Runtime;
-import net.kdt.pojavlaunch.utils.MathUtils;
-import net.kdt.pojavlaunch.value.launcherprofiles.LauncherProfiles;
-import net.kdt.pojavlaunch.value.launcherprofiles.MinecraftProfile;
+import net.kdt.aesirlaunch.multirt.MultiRTUtils;
+import net.kdt.aesirlaunch.multirt.Runtime;
+import net.kdt.aesirlaunch.utils.MathUtils;
+import net.kdt.aesirlaunch.value.launcherprofiles.LauncherProfiles;
+import net.kdt.aesirlaunch.value.launcherprofiles.MinecraftProfile;
 
 import java.io.IOException;
 import java.util.Arrays;

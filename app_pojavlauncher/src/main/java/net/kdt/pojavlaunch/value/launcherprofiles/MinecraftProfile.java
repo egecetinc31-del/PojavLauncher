@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.value.launcherprofiles;
+package net.kdt.aesirlaunch.value.launcherprofiles;
 
 import androidx.annotation.Keep;
 
@@ -19,7 +19,7 @@ public class MinecraftProfile {
 	public String javaArgs;
 	public String logConfig;
 	public boolean logConfigIsXML;
-	public String pojavRendererName;
+	public String aesirRendererName;
 	public String controlFile;
 	public MinecraftResolution[] resolution;
 
@@ -52,7 +52,7 @@ public class MinecraftProfile {
 		javaArgs = profile.javaArgs;
 		logConfig = profile.logConfig;
 		logConfigIsXML = profile.logConfigIsXML;
-		pojavRendererName = profile.pojavRendererName;
+		aesirRendererName = profile.aesirRendererName;
 		controlFile = profile.controlFile;
 		resolution = profile.resolution;
 	}

@@ -6,7 +6,7 @@ import android.util.*;
 
 import androidx.core.content.res.ResourcesCompat;
 
-import net.kdt.pojavlaunch.R;
+import net.kdt.aesirlaunch.R;
 
 public class MineButton extends androidx.appcompat.widget.AppCompatButton {
 	

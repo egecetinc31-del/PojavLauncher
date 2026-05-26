@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.customcontrols;
+package net.kdt.aesirlaunch.customcontrols;
 
 public interface ControlButtonMenuListener {
     void onClickedMenu();

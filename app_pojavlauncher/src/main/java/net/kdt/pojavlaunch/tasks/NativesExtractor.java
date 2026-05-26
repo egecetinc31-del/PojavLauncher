@@ -1,8 +1,8 @@
-package net.kdt.pojavlaunch.tasks;
+package net.kdt.aesirlaunch.tasks;
 
-import net.kdt.pojavlaunch.Architecture;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.utils.FileUtils;
+import net.kdt.aesirlaunch.Architecture;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.utils.FileUtils;
 
 import java.io.File;
 import java.io.FileInputStream;

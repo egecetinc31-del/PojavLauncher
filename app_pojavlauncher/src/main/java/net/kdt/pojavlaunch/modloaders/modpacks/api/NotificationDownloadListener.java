@@ -1,14 +1,14 @@
-package net.kdt.pojavlaunch.modloaders.modpacks.api;
+package net.kdt.aesirlaunch.modloaders.modpacks.api;
 
 import android.content.Context;
 import android.content.Intent;
 
-import net.kdt.pojavlaunch.LauncherActivity;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.modloaders.ModloaderDownloadListener;
-import net.kdt.pojavlaunch.modloaders.modpacks.ModloaderInstallTracker;
-import net.kdt.pojavlaunch.utils.NotificationUtils;
+import net.kdt.aesirlaunch.LauncherActivity;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.modloaders.ModloaderDownloadListener;
+import net.kdt.aesirlaunch.modloaders.modpacks.ModloaderInstallTracker;
+import net.kdt.aesirlaunch.utils.NotificationUtils;
 
 import java.io.File;
 

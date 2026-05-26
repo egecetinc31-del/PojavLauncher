@@ -1,17 +1,17 @@
-package net.kdt.pojavlaunch.modloaders.modpacks.api;
+package net.kdt.aesirlaunch.modloaders.modpacks.api;
 
 
 import android.content.Context;
 
 import com.kdt.mcgui.ProgressLayout;
 
-import net.kdt.pojavlaunch.PojavApplication;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.ModDetail;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.ModItem;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.SearchFilters;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.SearchResult;
+import net.kdt.aesirlaunch.AesirApplication;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.ModDetail;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.ModItem;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.SearchFilters;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.SearchResult;
 
 import java.io.IOException;
 
@@ -51,7 +51,7 @@ public interface ModpackApi {
         // Doing this here since when starting installation, the progress does not start immediately
         // which may lead to two concurrent installations (very bad)
         ProgressLayout.setProgress(ProgressLayout.INSTALL_MODPACK, 0, R.string.global_waiting);
-        PojavApplication.sExecutorService.execute(() -> {
+        AesirApplication.sExecutorService.execute(() -> {
             try {
                 ModLoader loaderInfo = installMod(modDetail, selectedVersion);
                 if (loaderInfo == null) return;

@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.fragments;
+package net.kdt.aesirlaunch.fragments;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -22,19 +22,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.extra.ExtraConstants;
-import net.kdt.pojavlaunch.extra.ExtraCore;
-import net.kdt.pojavlaunch.multirt.MultiRTUtils;
-import net.kdt.pojavlaunch.multirt.RTSpinnerAdapter;
-import net.kdt.pojavlaunch.multirt.Runtime;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.profiles.ProfileIconCache;
-import net.kdt.pojavlaunch.profiles.VersionSelectorDialog;
-import net.kdt.pojavlaunch.utils.CropperUtils;
-import net.kdt.pojavlaunch.value.launcherprofiles.LauncherProfiles;
-import net.kdt.pojavlaunch.value.launcherprofiles.MinecraftProfile;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.extra.ExtraConstants;
+import net.kdt.aesirlaunch.extra.ExtraCore;
+import net.kdt.aesirlaunch.multirt.MultiRTUtils;
+import net.kdt.aesirlaunch.multirt.RTSpinnerAdapter;
+import net.kdt.aesirlaunch.multirt.Runtime;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.profiles.ProfileIconCache;
+import net.kdt.aesirlaunch.profiles.VersionSelectorDialog;
+import net.kdt.aesirlaunch.utils.CropperUtils;
+import net.kdt.aesirlaunch.value.launcherprofiles.LauncherProfiles;
+import net.kdt.aesirlaunch.value.launcherprofiles.MinecraftProfile;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -182,8 +182,8 @@ public class ProfileEditorFragment extends Fragment implements CropperUtils.Crop
 
         // Renderer spinner
         int rendererIndex = mDefaultRenderer.getAdapter().getCount() - 1;
-        if(mTempProfile.pojavRendererName != null) {
-            int nindex = mRenderNames.indexOf(mTempProfile.pojavRendererName);
+        if(mTempProfile.aesirRendererName != null) {
+            int nindex = mRenderNames.indexOf(mTempProfile.aesirRendererName);
             if(nindex != -1) rendererIndex = nindex;
         }
         mDefaultRenderer.setSelection(rendererIndex);
@@ -198,9 +198,9 @@ public class ProfileEditorFragment extends Fragment implements CropperUtils.Crop
     private MinecraftProfile getProfile(@NonNull String profile){
         MinecraftProfile minecraftProfile;
         if(getArguments() == null) {
-            // EDGE CASE: User leaves Pojav in background. Pojav gets terminated in the background.
+            // EDGE CASE: User leaves Aesir in background. Aesir gets terminated in the background.
             // Current selected fragment and its arguments are saved.
-            // User returns to Pojav. Android restarts process and reinitializes fragment without
+            // User returns to Aesir. Android restarts process and reinitializes fragment without
             // going to the main screen. mainProfileJson and profiles left uninitialized, which
             // results in a crash.
             // Reload the profiles to avoid this edge case.
@@ -253,8 +253,8 @@ public class ProfileEditorFragment extends Fragment implements CropperUtils.Crop
         mTempProfile.javaDir = (selectedRuntime.name.equals("<Default>") || selectedRuntime.versionString == null)
                 ? null : Tools.LAUNCHERPROFILES_RTPREFIX + selectedRuntime.name;
 
-        if(mDefaultRenderer.getSelectedItemPosition() == mRenderNames.size()) mTempProfile.pojavRendererName = null;
-        else mTempProfile.pojavRendererName = mRenderNames.get(mDefaultRenderer.getSelectedItemPosition());
+        if(mDefaultRenderer.getSelectedItemPosition() == mRenderNames.size()) mTempProfile.aesirRendererName = null;
+        else mTempProfile.aesirRendererName = mRenderNames.get(mDefaultRenderer.getSelectedItemPosition());
 
 
         LauncherProfiles.mainProfileJson.profiles.put(mProfileKey, mTempProfile);

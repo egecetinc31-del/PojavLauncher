@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.customcontrols.handleview;
+package net.kdt.aesirlaunch.customcontrols.handleview;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -7,10 +7,10 @@ import android.widget.Button;
 
 import androidx.annotation.Nullable;
 
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.customcontrols.ControlData;
-import net.kdt.pojavlaunch.customcontrols.buttons.ControlDrawer;
-import net.kdt.pojavlaunch.customcontrols.buttons.ControlInterface;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.customcontrols.ControlData;
+import net.kdt.aesirlaunch.customcontrols.buttons.ControlDrawer;
+import net.kdt.aesirlaunch.customcontrols.buttons.ControlInterface;
 
 @SuppressLint("AppCompatCustomView")
 public class AddSubButton extends Button implements ActionButtonInterface {

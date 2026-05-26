@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.plugins;
+package net.kdt.aesirlaunch.plugins;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -14,7 +14,7 @@ public class FFmpegPlugin {
     public static void discover(Context context) {
         PackageManager manager = context.getPackageManager();
         try {
-            PackageInfo ffmpegPluginInfo = manager.getPackageInfo("net.kdt.pojavlaunch.ffmpeg", PackageManager.GET_SHARED_LIBRARY_FILES);
+            PackageInfo ffmpegPluginInfo = manager.getPackageInfo("net.kdt.aesirlaunch.ffmpeg", PackageManager.GET_SHARED_LIBRARY_FILES);
             libraryPath = ffmpegPluginInfo.applicationInfo.nativeLibraryDir;
             File ffmpegExecutable = new File(libraryPath, "libffmpeg.so");
             executablePath = ffmpegExecutable.getAbsolutePath();

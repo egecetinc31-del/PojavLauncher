@@ -1,7 +1,7 @@
-package net.kdt.pojavlaunch.fragments;
+package net.kdt.aesirlaunch.fragments;
 
-import net.kdt.pojavlaunch.modloaders.FabriclikeUtils;
-import net.kdt.pojavlaunch.modloaders.ModloaderListenerProxy;
+import net.kdt.aesirlaunch.modloaders.FabriclikeUtils;
+import net.kdt.aesirlaunch.modloaders.ModloaderListenerProxy;
 
 public class QuiltInstallFragment extends FabriclikeInstallFragment {
 

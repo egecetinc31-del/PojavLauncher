@@ -1,11 +1,11 @@
-package net.kdt.pojavlaunch.customcontrols.gamepad;
+package net.kdt.aesirlaunch.customcontrols.gamepad;
 
 import android.util.Log;
 
 import com.google.gson.JsonParseException;
 
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.utils.FileUtils;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.utils.FileUtils;
 
 import java.io.File;
 import java.io.IOException;

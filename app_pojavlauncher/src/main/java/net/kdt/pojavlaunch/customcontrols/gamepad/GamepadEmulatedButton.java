@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.customcontrols.gamepad;
+package net.kdt.aesirlaunch.customcontrols.gamepad;
 
 import android.view.KeyEvent;
 

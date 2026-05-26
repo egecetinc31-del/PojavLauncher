@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.customcontrols.gamepad.direct;
+package net.kdt.aesirlaunch.customcontrols.gamepad.direct;
 
 import static org.lwjgl.glfw.CallbackBridge.sGamepadAxisBuffer;
 import static org.lwjgl.glfw.CallbackBridge.sGamepadButtonBuffer;

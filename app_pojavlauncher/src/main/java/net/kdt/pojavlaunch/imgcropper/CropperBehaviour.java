@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.imgcropper;
+package net.kdt.aesirlaunch.imgcropper;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

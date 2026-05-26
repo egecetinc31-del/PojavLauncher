@@ -1,11 +1,11 @@
-package net.kdt.pojavlaunch.utils;
+package net.kdt.aesirlaunch.utils;
 
 import android.util.Log;
 
-import net.kdt.pojavlaunch.JMinecraftVersionList;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.extra.ExtraConstants;
-import net.kdt.pojavlaunch.extra.ExtraCore;
+import net.kdt.aesirlaunch.JMinecraftVersionList;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.extra.ExtraConstants;
+import net.kdt.aesirlaunch.extra.ExtraCore;
 
 import java.text.ParseException;
 import java.util.Date;

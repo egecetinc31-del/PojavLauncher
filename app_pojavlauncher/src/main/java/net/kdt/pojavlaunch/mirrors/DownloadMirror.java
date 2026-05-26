@@ -1,12 +1,12 @@
-package net.kdt.pojavlaunch.mirrors;
+package net.kdt.aesirlaunch.mirrors;
 
 import android.util.Log;
 
 import androidx.annotation.Nullable;
 
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.utils.DownloadUtils;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.utils.DownloadUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;

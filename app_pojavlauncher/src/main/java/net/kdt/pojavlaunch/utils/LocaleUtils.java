@@ -1,8 +1,8 @@
-package net.kdt.pojavlaunch.utils;
+package net.kdt.aesirlaunch.utils;
 
 
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.DEFAULT_PREF;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_FORCE_ENGLISH;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.DEFAULT_PREF;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_FORCE_ENGLISH;
 
 import android.content.*;
 import android.content.res.*;
@@ -21,7 +21,7 @@ public class LocaleUtils extends ContextWrapper {
     public static ContextWrapper setLocale(Context context) {
         if (DEFAULT_PREF == null) {
             DEFAULT_PREF = PreferenceManager.getDefaultSharedPreferences(context);
-            // Too early to initialize all prefs here, as this is called by PojavApplication
+            // Too early to initialize all prefs here, as this is called by AesirApplication
             // before storage checks are done and before the storage paths are initialized.
             // So only initialize PREF_FORCE_ENGLISH for the check below.
             PREF_FORCE_ENGLISH = DEFAULT_PREF.getBoolean("force_english", false);

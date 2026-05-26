@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.utils;
+package net.kdt.aesirlaunch.utils;
 
 import android.util.Log;
 
@@ -9,7 +9,7 @@ import java.net.*;
 import java.nio.charset.*;
 import java.util.concurrent.Callable;
 
-import net.kdt.pojavlaunch.*;
+import net.kdt.aesirlaunch.*;
 import org.apache.commons.io.*;
 
 @SuppressWarnings("IOStreamConstructor")

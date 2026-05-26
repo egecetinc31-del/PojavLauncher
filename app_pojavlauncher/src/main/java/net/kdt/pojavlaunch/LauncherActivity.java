@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
 import static android.content.res.Configuration.ORIENTATION_PORTRAIT;
 import android.Manifest;
@@ -24,29 +24,29 @@ import androidx.fragment.app.FragmentManager;
 import com.kdt.mcgui.ProgressLayout;
 import com.kdt.mcgui.mcAccountSpinner;
 
-import net.kdt.pojavlaunch.contracts.OpenDocumentWithExtension;
-import net.kdt.pojavlaunch.extra.ExtraConstants;
-import net.kdt.pojavlaunch.extra.ExtraCore;
-import net.kdt.pojavlaunch.extra.ExtraListener;
-import net.kdt.pojavlaunch.fragments.MainMenuFragment;
-import net.kdt.pojavlaunch.fragments.MicrosoftLoginFragment;
-import net.kdt.pojavlaunch.fragments.SelectAuthFragment;
-import net.kdt.pojavlaunch.lifecycle.ContextAwareDoneListener;
-import net.kdt.pojavlaunch.lifecycle.ContextExecutor;
-import net.kdt.pojavlaunch.modloaders.modpacks.ModloaderInstallTracker;
-import net.kdt.pojavlaunch.modloaders.modpacks.imagecache.IconCacheJanitor;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.prefs.screens.LauncherPreferenceFragment;
-import net.kdt.pojavlaunch.progresskeeper.ProgressKeeper;
-import net.kdt.pojavlaunch.progresskeeper.TaskCountListener;
-import net.kdt.pojavlaunch.services.ProgressServiceKeeper;
-import net.kdt.pojavlaunch.tasks.AsyncMinecraftDownloader;
-import net.kdt.pojavlaunch.tasks.AsyncVersionList;
-import net.kdt.pojavlaunch.tasks.MinecraftDownloader;
-import net.kdt.pojavlaunch.utils.DateUtils;
-import net.kdt.pojavlaunch.utils.NotificationUtils;
-import net.kdt.pojavlaunch.value.launcherprofiles.LauncherProfiles;
-import net.kdt.pojavlaunch.value.launcherprofiles.MinecraftProfile;
+import net.kdt.aesirlaunch.contracts.OpenDocumentWithExtension;
+import net.kdt.aesirlaunch.extra.ExtraConstants;
+import net.kdt.aesirlaunch.extra.ExtraCore;
+import net.kdt.aesirlaunch.extra.ExtraListener;
+import net.kdt.aesirlaunch.fragments.MainMenuFragment;
+import net.kdt.aesirlaunch.fragments.MicrosoftLoginFragment;
+import net.kdt.aesirlaunch.fragments.SelectAuthFragment;
+import net.kdt.aesirlaunch.lifecycle.ContextAwareDoneListener;
+import net.kdt.aesirlaunch.lifecycle.ContextExecutor;
+import net.kdt.aesirlaunch.modloaders.modpacks.ModloaderInstallTracker;
+import net.kdt.aesirlaunch.modloaders.modpacks.imagecache.IconCacheJanitor;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.prefs.screens.LauncherPreferenceFragment;
+import net.kdt.aesirlaunch.progresskeeper.ProgressKeeper;
+import net.kdt.aesirlaunch.progresskeeper.TaskCountListener;
+import net.kdt.aesirlaunch.services.ProgressServiceKeeper;
+import net.kdt.aesirlaunch.tasks.AsyncMinecraftDownloader;
+import net.kdt.aesirlaunch.tasks.AsyncVersionList;
+import net.kdt.aesirlaunch.tasks.MinecraftDownloader;
+import net.kdt.aesirlaunch.utils.DateUtils;
+import net.kdt.aesirlaunch.utils.NotificationUtils;
+import net.kdt.aesirlaunch.value.launcherprofiles.LauncherProfiles;
+import net.kdt.aesirlaunch.value.launcherprofiles.MinecraftProfile;
 
 import java.lang.ref.WeakReference;
 import java.text.ParseException;
@@ -179,7 +179,7 @@ public class LauncherActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pojav_launcher);
+        setContentView(R.layout.activity_aesir_launcher);
         FragmentManager fragmentManager = getSupportFragmentManager();
         // If we don't have a back stack root yet...
         if(fragmentManager.getBackStackEntryCount() < 1) {

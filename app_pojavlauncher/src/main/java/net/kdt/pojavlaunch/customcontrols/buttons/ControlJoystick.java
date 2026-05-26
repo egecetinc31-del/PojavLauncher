@@ -1,25 +1,25 @@
-package net.kdt.pojavlaunch.customcontrols.buttons;
+package net.kdt.aesirlaunch.customcontrols.buttons;
 
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_EAST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NONE;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH_EAST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH_WEST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH_EAST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH_WEST;
-import static net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_WEST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_EAST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NONE;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH_EAST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_NORTH_WEST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH_EAST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_SOUTH_WEST;
+import static net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick.DIRECTION_WEST;
 
 import android.annotation.SuppressLint;
 import android.view.View;
 
-import net.kdt.pojavlaunch.LwjglGlfwKeycode;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.customcontrols.ControlData;
-import net.kdt.pojavlaunch.customcontrols.ControlJoystickData;
-import net.kdt.pojavlaunch.customcontrols.ControlLayout;
-import net.kdt.pojavlaunch.customcontrols.gamepad.GamepadJoystick;
-import net.kdt.pojavlaunch.customcontrols.handleview.EditControlSideDialog;
+import net.kdt.aesirlaunch.LwjglGlfwKeycode;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.customcontrols.ControlData;
+import net.kdt.aesirlaunch.customcontrols.ControlJoystickData;
+import net.kdt.aesirlaunch.customcontrols.ControlLayout;
+import net.kdt.aesirlaunch.customcontrols.gamepad.GamepadJoystick;
+import net.kdt.aesirlaunch.customcontrols.handleview.EditControlSideDialog;
 
 import org.lwjgl.glfw.CallbackBridge;
 

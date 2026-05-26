@@ -1,8 +1,8 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
 import androidx.annotation.Keep;
 import java.util.*;
-import net.kdt.pojavlaunch.value.*;
+import net.kdt.aesirlaunch.value.*;
 
 @Keep
 @SuppressWarnings("unused") // all unused fields here are parts of JSON structures

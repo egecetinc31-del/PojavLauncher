@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.fragments;
+package net.kdt.aesirlaunch.fragments;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,13 +7,13 @@ import android.widget.ExpandableListAdapter;
 
 import androidx.annotation.NonNull;
 
-import net.kdt.pojavlaunch.JavaGUILauncherActivity;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.modloaders.ForgeDownloadTask;
-import net.kdt.pojavlaunch.modloaders.ForgeUtils;
-import net.kdt.pojavlaunch.modloaders.ForgeVersionListAdapter;
-import net.kdt.pojavlaunch.modloaders.ModloaderListenerProxy;
+import net.kdt.aesirlaunch.JavaGUILauncherActivity;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.modloaders.ForgeDownloadTask;
+import net.kdt.aesirlaunch.modloaders.ForgeUtils;
+import net.kdt.aesirlaunch.modloaders.ForgeVersionListAdapter;
+import net.kdt.aesirlaunch.modloaders.ModloaderListenerProxy;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,8 +1,8 @@
-package net.kdt.pojavlaunch.prefs.screens;
+package net.kdt.aesirlaunch.prefs.screens;
 
 import android.os.Bundle;
 
-import net.kdt.pojavlaunch.R;
+import net.kdt.aesirlaunch.R;
 
 public class LauncherPreferenceExperimentalFragment extends LauncherPreferenceFragment {
 

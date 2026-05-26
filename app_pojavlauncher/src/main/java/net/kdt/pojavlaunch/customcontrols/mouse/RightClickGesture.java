@@ -1,8 +1,8 @@
-package net.kdt.pojavlaunch.customcontrols.mouse;
+package net.kdt.aesirlaunch.customcontrols.mouse;
 
 import android.os.Handler;
 
-import net.kdt.pojavlaunch.LwjglGlfwKeycode;
+import net.kdt.aesirlaunch.LwjglGlfwKeycode;
 
 import org.lwjgl.glfw.CallbackBridge;
 

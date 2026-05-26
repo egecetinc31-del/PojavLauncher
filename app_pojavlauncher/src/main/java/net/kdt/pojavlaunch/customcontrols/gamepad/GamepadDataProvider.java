@@ -1,6 +1,6 @@
-package net.kdt.pojavlaunch.customcontrols.gamepad;
+package net.kdt.aesirlaunch.customcontrols.gamepad;
 
-import net.kdt.pojavlaunch.GrabListener;
+import net.kdt.aesirlaunch.GrabListener;
 
 public interface GamepadDataProvider {
     GamepadMap getMenuMap();

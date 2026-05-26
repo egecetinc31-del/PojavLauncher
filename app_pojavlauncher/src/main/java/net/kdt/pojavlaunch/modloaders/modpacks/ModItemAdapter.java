@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.modloaders.modpacks;
+package net.kdt.aesirlaunch.modloaders.modpacks;
 
 import android.annotation.SuppressLint;
 import android.content.res.Resources;
@@ -20,18 +20,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.kdt.SimpleArrayAdapter;
 
-import net.kdt.pojavlaunch.PojavApplication;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.modloaders.modpacks.api.ModpackApi;
-import net.kdt.pojavlaunch.modloaders.modpacks.imagecache.ImageReceiver;
-import net.kdt.pojavlaunch.modloaders.modpacks.imagecache.ModIconCache;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.Constants;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.ModDetail;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.ModItem;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.SearchFilters;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.SearchResult;
-import net.kdt.pojavlaunch.progresskeeper.TaskCountListener;
+import net.kdt.aesirlaunch.AesirApplication;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.modloaders.modpacks.api.ModpackApi;
+import net.kdt.aesirlaunch.modloaders.modpacks.imagecache.ImageReceiver;
+import net.kdt.aesirlaunch.modloaders.modpacks.imagecache.ModIconCache;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.Constants;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.ModDetail;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.ModItem;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.SearchFilters;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.SearchResult;
+import net.kdt.aesirlaunch.progresskeeper.TaskCountListener;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -78,7 +78,7 @@ public class ModItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         this.mSearchFilters = searchFilters;
         this.mLastPage = false;
         mTaskInProgress = new SelfReferencingFuture(new SearchApiTask(mSearchFilters, null))
-                .startOnExecutor(PojavApplication.sExecutorService);
+                .startOnExecutor(AesirApplication.sExecutorService);
     }
 
     @NonNull
@@ -123,7 +123,7 @@ public class ModItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private void loadMoreResults() {
         if(mTaskInProgress != null) return;
         mTaskInProgress = new SelfReferencingFuture(new SearchApiTask(mSearchFilters, mCurrentResult))
-                .startOnExecutor(PojavApplication.sExecutorService);
+                .startOnExecutor(AesirApplication.sExecutorService);
     }
 
     @Override
@@ -217,7 +217,7 @@ public class ModItemAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                             mExtensionFuture = null;
                             setStateDetailed(mModDetail);
                         });
-                    }).startOnExecutor(PojavApplication.sExecutorService);
+                    }).startOnExecutor(AesirApplication.sExecutorService);
                 }
             });
 

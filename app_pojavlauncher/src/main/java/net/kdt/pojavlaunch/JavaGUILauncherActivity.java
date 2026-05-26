@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -19,13 +19,13 @@ import androidx.appcompat.app.AlertDialog;
 
 import com.kdt.LoggerView;
 
-import net.kdt.pojavlaunch.customcontrols.keyboard.AwtCharSender;
-import net.kdt.pojavlaunch.customcontrols.keyboard.TouchCharInput;
-import net.kdt.pojavlaunch.multirt.MultiRTUtils;
-import net.kdt.pojavlaunch.multirt.Runtime;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.utils.JREUtils;
-import net.kdt.pojavlaunch.utils.MathUtils;
+import net.kdt.aesirlaunch.customcontrols.keyboard.AwtCharSender;
+import net.kdt.aesirlaunch.customcontrols.keyboard.TouchCharInput;
+import net.kdt.aesirlaunch.multirt.MultiRTUtils;
+import net.kdt.aesirlaunch.multirt.Runtime;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.utils.JREUtils;
+import net.kdt.aesirlaunch.utils.MathUtils;
 
 import org.apache.commons.io.IOUtils;
 import org.lwjgl.glfw.CallbackBridge;
@@ -164,7 +164,7 @@ public class JavaGUILauncherActivity extends BaseActivity implements View.OnTouc
                 startModInstaller(null, javaArgs);
             }else if(resourceUri != null) {
                 ProgressDialog barrierDialog = Tools.getWaitingDialog(this, R.string.multirt_progress_caching);
-                PojavApplication.sExecutorService.execute(()->{
+                AesirApplication.sExecutorService.execute(()->{
                     startModInstallerWithUri(resourceUri);
                     runOnUiThread(barrierDialog::dismiss);
                 });

@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.customcontrols.gamepad.direct;
+package net.kdt.aesirlaunch.customcontrols.gamepad.direct;
 
 /**
  * Interface that is called once when the GLFW implementation requests to switch from

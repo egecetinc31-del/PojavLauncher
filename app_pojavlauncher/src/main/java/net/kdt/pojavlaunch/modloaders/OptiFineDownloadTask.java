@@ -1,16 +1,16 @@
-package net.kdt.pojavlaunch.modloaders;
+package net.kdt.aesirlaunch.modloaders;
 
 import android.app.Activity;
 
 import com.kdt.mcgui.ProgressLayout;
 
-import net.kdt.pojavlaunch.JMinecraftVersionList;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.progresskeeper.ProgressKeeper;
-import net.kdt.pojavlaunch.tasks.AsyncMinecraftDownloader;
-import net.kdt.pojavlaunch.tasks.MinecraftDownloader;
-import net.kdt.pojavlaunch.utils.DownloadUtils;
+import net.kdt.aesirlaunch.JMinecraftVersionList;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.progresskeeper.ProgressKeeper;
+import net.kdt.aesirlaunch.tasks.AsyncMinecraftDownloader;
+import net.kdt.aesirlaunch.tasks.MinecraftDownloader;
+import net.kdt.aesirlaunch.utils.DownloadUtils;
 
 import java.io.File;
 import java.io.IOException;

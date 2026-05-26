@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.fragments;
+package net.kdt.aesirlaunch.fragments;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
@@ -19,13 +19,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.modloaders.modpacks.ModItemAdapter;
-import net.kdt.pojavlaunch.modloaders.modpacks.api.CommonApi;
-import net.kdt.pojavlaunch.modloaders.modpacks.api.ModpackApi;
-import net.kdt.pojavlaunch.modloaders.modpacks.models.SearchFilters;
-import net.kdt.pojavlaunch.profiles.VersionSelectorDialog;
-import net.kdt.pojavlaunch.progresskeeper.ProgressKeeper;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.modloaders.modpacks.ModItemAdapter;
+import net.kdt.aesirlaunch.modloaders.modpacks.api.CommonApi;
+import net.kdt.aesirlaunch.modloaders.modpacks.api.ModpackApi;
+import net.kdt.aesirlaunch.modloaders.modpacks.models.SearchFilters;
+import net.kdt.aesirlaunch.profiles.VersionSelectorDialog;
+import net.kdt.aesirlaunch.progresskeeper.ProgressKeeper;
 
 public class SearchModFragment extends Fragment implements ModItemAdapter.SearchResultCallback {
 

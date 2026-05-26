@@ -29,18 +29,18 @@ import androidx.appcompat.widget.AppCompatSpinner;
 import androidx.core.content.res.ResourcesCompat;
 
 
-import net.kdt.pojavlaunch.PojavProfile;
-import net.kdt.pojavlaunch.R;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.authenticator.listener.DoneListener;
-import net.kdt.pojavlaunch.authenticator.listener.ErrorListener;
-import net.kdt.pojavlaunch.authenticator.listener.ProgressListener;
-import net.kdt.pojavlaunch.authenticator.microsoft.PresentedException;
-import net.kdt.pojavlaunch.authenticator.microsoft.MicrosoftBackgroundLogin;
-import net.kdt.pojavlaunch.extra.ExtraConstants;
-import net.kdt.pojavlaunch.extra.ExtraCore;
-import net.kdt.pojavlaunch.extra.ExtraListener;
-import net.kdt.pojavlaunch.value.MinecraftAccount;
+import net.kdt.aesirlaunch.AesirProfile;
+import net.kdt.aesirlaunch.R;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.authenticator.listener.DoneListener;
+import net.kdt.aesirlaunch.authenticator.listener.ErrorListener;
+import net.kdt.aesirlaunch.authenticator.listener.ProgressListener;
+import net.kdt.aesirlaunch.authenticator.microsoft.PresentedException;
+import net.kdt.aesirlaunch.authenticator.microsoft.MicrosoftBackgroundLogin;
+import net.kdt.aesirlaunch.extra.ExtraConstants;
+import net.kdt.aesirlaunch.extra.ExtraCore;
+import net.kdt.aesirlaunch.extra.ExtraListener;
+import net.kdt.aesirlaunch.value.MinecraftAccount;
 
 import java.io.File;
 import java.io.IOException;
@@ -293,8 +293,8 @@ public class mcAccountSpinner extends AppCompatSpinner implements AdapterView.On
     private void pickAccount(int position){
         MinecraftAccount selectedAccount;
         if(position != -1){
-            PojavProfile.setCurrentProfile(getContext(), mAccountList.get(position));
-            selectedAccount = PojavProfile.getCurrentProfileContent(getContext(), mAccountList.get(position));
+            AesirProfile.setCurrentProfile(getContext(), mAccountList.get(position));
+            selectedAccount = AesirProfile.getCurrentProfileContent(getContext(), mAccountList.get(position));
 
 
             // WORKAROUND
@@ -308,7 +308,7 @@ public class mcAccountSpinner extends AppCompatSpinner implements AdapterView.On
             setSelection(position);
         }else {
             // Get the current profile, or the first available profile if the wanted one is unavailable
-            selectedAccount = PojavProfile.getCurrentProfileContent(getContext(), null);
+            selectedAccount = AesirProfile.getCurrentProfileContent(getContext(), null);
             int spinnerPosition = selectedAccount == null
                     ? mAccountList.size() <= 1 ? 0 : 1
                     : mAccountList.indexOf(selectedAccount.username);

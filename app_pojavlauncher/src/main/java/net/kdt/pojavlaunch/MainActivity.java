@@ -1,11 +1,11 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
-import static net.kdt.pojavlaunch.Tools.currentDisplayMetrics;
-import static net.kdt.pojavlaunch.Tools.dialogForceClose;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_ENABLE_GYRO;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_SUSTAINED_PERFORMANCE;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_USE_ALTERNATE_SURFACE;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_VIRTUAL_MOUSE_START;
+import static net.kdt.aesirlaunch.Tools.currentDisplayMetrics;
+import static net.kdt.aesirlaunch.Tools.dialogForceClose;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_ENABLE_GYRO;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_SUSTAINED_PERFORMANCE;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_USE_ALTERNATE_SURFACE;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_VIRTUAL_MOUSE_START;
 import static org.lwjgl.glfw.CallbackBridge.sendKeyPress;
 import static org.lwjgl.glfw.CallbackBridge.windowHeight;
 import static org.lwjgl.glfw.CallbackBridge.windowWidth;
@@ -45,27 +45,27 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import com.kdt.LoggerView;
 
-import net.kdt.pojavlaunch.customcontrols.ControlButtonMenuListener;
-import net.kdt.pojavlaunch.customcontrols.ControlData;
-import net.kdt.pojavlaunch.customcontrols.ControlDrawerData;
-import net.kdt.pojavlaunch.customcontrols.ControlJoystickData;
-import net.kdt.pojavlaunch.customcontrols.ControlLayout;
-import net.kdt.pojavlaunch.customcontrols.CustomControls;
-import net.kdt.pojavlaunch.customcontrols.EditorExitable;
-import net.kdt.pojavlaunch.customcontrols.keyboard.LwjglCharSender;
-import net.kdt.pojavlaunch.customcontrols.keyboard.TouchCharInput;
-import net.kdt.pojavlaunch.customcontrols.mouse.GyroControl;
-import net.kdt.pojavlaunch.customcontrols.mouse.HotbarView;
-import net.kdt.pojavlaunch.customcontrols.mouse.Touchpad;
-import net.kdt.pojavlaunch.lifecycle.ContextExecutor;
-import net.kdt.pojavlaunch.prefs.LauncherPreferences;
-import net.kdt.pojavlaunch.prefs.QuickSettingSideDialog;
-import net.kdt.pojavlaunch.services.GameService;
-import net.kdt.pojavlaunch.utils.JREUtils;
-import net.kdt.pojavlaunch.utils.MCOptionUtils;
-import net.kdt.pojavlaunch.value.MinecraftAccount;
-import net.kdt.pojavlaunch.value.launcherprofiles.LauncherProfiles;
-import net.kdt.pojavlaunch.value.launcherprofiles.MinecraftProfile;
+import net.kdt.aesirlaunch.customcontrols.ControlButtonMenuListener;
+import net.kdt.aesirlaunch.customcontrols.ControlData;
+import net.kdt.aesirlaunch.customcontrols.ControlDrawerData;
+import net.kdt.aesirlaunch.customcontrols.ControlJoystickData;
+import net.kdt.aesirlaunch.customcontrols.ControlLayout;
+import net.kdt.aesirlaunch.customcontrols.CustomControls;
+import net.kdt.aesirlaunch.customcontrols.EditorExitable;
+import net.kdt.aesirlaunch.customcontrols.keyboard.LwjglCharSender;
+import net.kdt.aesirlaunch.customcontrols.keyboard.TouchCharInput;
+import net.kdt.aesirlaunch.customcontrols.mouse.GyroControl;
+import net.kdt.aesirlaunch.customcontrols.mouse.HotbarView;
+import net.kdt.aesirlaunch.customcontrols.mouse.Touchpad;
+import net.kdt.aesirlaunch.lifecycle.ContextExecutor;
+import net.kdt.aesirlaunch.prefs.LauncherPreferences;
+import net.kdt.aesirlaunch.prefs.QuickSettingSideDialog;
+import net.kdt.aesirlaunch.services.GameService;
+import net.kdt.aesirlaunch.utils.JREUtils;
+import net.kdt.aesirlaunch.utils.MCOptionUtils;
+import net.kdt.aesirlaunch.value.MinecraftAccount;
+import net.kdt.aesirlaunch.value.launcherprofiles.LauncherProfiles;
+import net.kdt.aesirlaunch.value.launcherprofiles.MinecraftProfile;
 
 import org.lwjgl.glfw.CallbackBridge;
 
@@ -165,9 +165,9 @@ public class MainActivity extends BaseActivity implements ControlButtonMenuListe
             GLOBAL_CLIPBOARD = (ClipboardManager) getSystemService(CLIPBOARD_SERVICE);
             touchCharInput.setCharacterSender(new LwjglCharSender());
 
-            if(minecraftProfile.pojavRendererName != null) {
-                Log.i("RdrDebug","__P_renderer="+minecraftProfile.pojavRendererName);
-                Tools.LOCAL_RENDERER = minecraftProfile.pojavRendererName;
+            if(minecraftProfile.aesirRendererName != null) {
+                Log.i("RdrDebug","__P_renderer="+minecraftProfile.aesirRendererName);
+                Tools.LOCAL_RENDERER = minecraftProfile.aesirRendererName;
             }
 
             setTitle("Minecraft " + minecraftProfile.lastVersionId);
@@ -359,7 +359,7 @@ public class MainActivity extends BaseActivity implements ControlButtonMenuListe
             Tools.LOCAL_RENDERER = firstCompatibleRenderer;
             Tools.releaseRenderersCache();
         }
-        MinecraftAccount minecraftAccount = PojavProfile.getCurrentProfileContent(this, null);
+        MinecraftAccount minecraftAccount = AesirProfile.getCurrentProfileContent(this, null);
         Logger.appendToLog("--------- Starting game with Launcher Debug!");
         Tools.printLauncherInfo(versionId, Tools.isValidString(minecraftProfile.javaArgs) ? minecraftProfile.javaArgs : LauncherPreferences.PREF_CUSTOM_JAVA_ARGS);
         JREUtils.redirectAndPrintJRELog();

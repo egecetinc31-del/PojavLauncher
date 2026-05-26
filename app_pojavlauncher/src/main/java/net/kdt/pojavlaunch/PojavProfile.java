@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch;
+package net.kdt.aesirlaunch;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -6,10 +6,10 @@ import android.content.SharedPreferences;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import net.kdt.pojavlaunch.value.MinecraftAccount;
+import net.kdt.aesirlaunch.value.MinecraftAccount;
 
-public class PojavProfile {
-	private static final String PROFILE_PREF = "pojav_profile";
+public class AesirProfile {
+	private static final String PROFILE_PREF = "aesir_profile";
 	private static final String PROFILE_PREF_FILE = "file";
 
 	public static SharedPreferences getPrefs(Context ctx) {

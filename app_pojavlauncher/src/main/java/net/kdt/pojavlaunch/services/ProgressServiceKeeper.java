@@ -1,8 +1,8 @@
-package net.kdt.pojavlaunch.services;
+package net.kdt.aesirlaunch.services;
 
 import android.content.Context;
 
-import net.kdt.pojavlaunch.progresskeeper.TaskCountListener;
+import net.kdt.aesirlaunch.progresskeeper.TaskCountListener;
 
 public class ProgressServiceKeeper implements TaskCountListener {
     private final Context context;

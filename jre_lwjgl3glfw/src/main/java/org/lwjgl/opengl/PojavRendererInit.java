@@ -10,7 +10,7 @@ import javax.annotation.Nullable;
  * any callbacks needed for renderers by using the same FunctionProvider as used for loading
  * GL symbols.
  * */
-public class PojavRendererInit {
+public class AesirRendererInit {
 
     public static void onCreateCapabilities(FunctionProvider functionProvider) {
         String rendererName = null;
@@ -22,7 +22,7 @@ public class PojavRendererInit {
             rendererName = System.getProperty("org.lwjgl.opengl.libname");
         }
         if(!isValidString(rendererName)) {
-            System.out.println("PojavRendererInit: Failed to find Pojav renderer name! " +
+            System.out.println("AesirRendererInit: Failed to find Aesir renderer name! " +
                                 "Renderer-specific initialization may not work properly");
         }
         // NOTE: hardcoded gl4es libname

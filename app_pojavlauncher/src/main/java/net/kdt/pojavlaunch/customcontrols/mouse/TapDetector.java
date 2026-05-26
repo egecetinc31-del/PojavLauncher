@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.customcontrols.mouse;
+package net.kdt.aesirlaunch.customcontrols.mouse;
 
 import android.view.MotionEvent;
 
@@ -7,7 +7,7 @@ import static android.view.MotionEvent.ACTION_POINTER_DOWN;
 import static android.view.MotionEvent.ACTION_POINTER_UP;
 import static android.view.MotionEvent.ACTION_UP;
 
-import net.kdt.pojavlaunch.Tools;
+import net.kdt.aesirlaunch.Tools;
 
 /**
  * Class aiming at better detecting X-tap events regardless of the POINTERS

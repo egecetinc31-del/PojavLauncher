@@ -1,8 +1,8 @@
-package net.kdt.pojavlaunch.customcontrols.buttons;
+package net.kdt.aesirlaunch.customcontrols.buttons;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
-import static net.kdt.pojavlaunch.prefs.LauncherPreferences.PREF_BUTTONSIZE;
+import static net.kdt.aesirlaunch.prefs.LauncherPreferences.PREF_BUTTONSIZE;
 
 import android.annotation.SuppressLint;
 import android.graphics.drawable.GradientDrawable;
@@ -16,11 +16,11 @@ import androidx.annotation.CallSuper;
 import androidx.annotation.NonNull;
 import androidx.core.math.MathUtils;
 
-import net.kdt.pojavlaunch.GrabListener;
-import net.kdt.pojavlaunch.Tools;
-import net.kdt.pojavlaunch.customcontrols.ControlData;
-import net.kdt.pojavlaunch.customcontrols.ControlLayout;
-import net.kdt.pojavlaunch.customcontrols.handleview.EditControlSideDialog;
+import net.kdt.aesirlaunch.GrabListener;
+import net.kdt.aesirlaunch.Tools;
+import net.kdt.aesirlaunch.customcontrols.ControlData;
+import net.kdt.aesirlaunch.customcontrols.ControlLayout;
+import net.kdt.aesirlaunch.customcontrols.handleview.EditControlSideDialog;
 
 import org.lwjgl.glfw.CallbackBridge;
 
@@ -216,7 +216,7 @@ public interface ControlInterface extends View.OnLongClickListener, GrabListener
         float MIN_DISTANCE = getSnapDistance();
 
         if (button == this) return false;
-        return !(net.kdt.pojavlaunch.utils.MathUtils.dist(
+        return !(net.kdt.aesirlaunch.utils.MathUtils.dist(
                 button.getControlView().getX() + button.getControlView().getWidth() / 2f,
                 button.getControlView().getY() + button.getControlView().getHeight() / 2f,
                 getControlView().getX() + getControlView().getWidth() / 2f,

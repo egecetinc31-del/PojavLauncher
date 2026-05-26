@@ -1,4 +1,4 @@
-package net.kdt.pojavlaunch.authenticator.listener;
+package net.kdt.aesirlaunch.authenticator.listener;
 
 /** Called when a step is started, guaranteed to be in the UI Thread */
 public interface ProgressListener {
