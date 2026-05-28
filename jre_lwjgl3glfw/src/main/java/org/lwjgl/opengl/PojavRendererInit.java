@@ -10,7 +10,7 @@ import javax.annotation.Nullable;
  * any callbacks needed for renderers by using the same FunctionProvider as used for loading
  * GL symbols.
  * */
-public class AesirRendererInit {
+public class PojavRendererInit {
 
     public static void onCreateCapabilities(FunctionProvider functionProvider) {
         String rendererName = null;
