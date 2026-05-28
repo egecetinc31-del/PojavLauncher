@@ -45,7 +45,8 @@ jobs:
           branch: buildjre8
           name: jre8-pojav
 
-      - name: Get JRE17
+      - name: Get JRE 17
+        continue-on-error: true
         uses: dawidd6/action-download-artifact@v9
         with:
           workflow: build.yml
@@ -55,7 +56,8 @@ jobs:
           branch: buildjre17-21
           name: jre17-pojav
 
-      - name: Get JRE21
+      - name: Get JRE 21
+        continue-on-error: true
         uses: dawidd6/action-download-artifact@v9
         with:
           workflow: build.yml
