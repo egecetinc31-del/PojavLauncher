@@ -73,7 +73,7 @@ jobs:
 
       - name: Build JRE JAR files
         continue-on-error: true
-        rugit restore gradle.propertiesn: |
+        run: |
           ./scripts/languagelist_updater.sh
 
           mkdir out
